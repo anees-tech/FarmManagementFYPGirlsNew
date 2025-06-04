@@ -1,0 +1,129 @@
+.crop-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://www.shutterstock.com/image-photo/ripe-carrots-growing-on-field-600nw-1510392164.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.crop-hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.crop-hero-subtitle {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.admin-crop-btn {
+  margin-top: 20px;
+  background-color: #ff9800;
+  color: white;
+}
+
+.admin-crop-btn:hover {
+  background-color: #f57c00;
+}
+
+.crop-categories {
+  display: flex;
+  flex-wrap: wrap; /* Allows buttons to wrap to the next line on smaller screens */
+  gap: 10px;
+  margin-bottom: 40px;
+  justify-content: flex-start; /* Centers the buttons horizontally */
+}
+
+.category-btn {
+  padding: 8px 16px;
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: auto;
+  display: block;
+  text-align: left;
+  margin: 5px 0;
+}
+
+.category-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.category-btn:hover:not(.active) {
+  background-color: var(--background-color);
+  border-color: var(--primary-color);
+}
+
+.no-crops-message {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+  color: var(--light-text);
+}
+
+.crop-management-info {
+  background-color: #f5f9f5;
+}
+
+.crop-management-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.crop-management-text h3 {
+  font-size: 1.3rem;
+  margin: 20px 0 10px;
+  color: var(--primary-color);
+}
+
+.crop-management-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.crop-management-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+}
+
+.loading,
+.error-message {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+}
+
+.error-message {
+  color: var(--error-color);
+}
+
+@media (max-width: 768px) {
+  .crop-management-content {
+    grid-template-columns: 1fr;
+  }
+
+  .crop-management-image {
+    order: -1;
+  }
+
+  .crop-categories {
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .category-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,48 @@
+const marketTrends = {
+  weekly: [
+    { id: 1, crop: "Wheat", currentPrice: 320, previousPrice: 310, change: 3.2, trend: "up" },
+    { id: 2, crop: "Rice", currentPrice: 450, previousPrice: 460, change: -2.2, trend: "down" },
+    { id: 3, crop: "Corn", currentPrice: 280, previousPrice: 280, change: 0, trend: "stable" },
+    { id: 4, crop: "Soybean", currentPrice: 520, previousPrice: 490, change: 6.1, trend: "up" },
+    { id: 5, crop: "Cotton", currentPrice: 180, previousPrice: 190, change: -5.3, trend: "down" },
+    { id: 6, crop: "Sugarcane", currentPrice: 110, previousPrice: 105, change: 4.8, trend: "up" },
+    { id: 7, crop: "Potato", currentPrice: 220, previousPrice: 230, change: -4.3, trend: "down" },
+    { id: 8, crop: "Tomato", currentPrice: 350, previousPrice: 320, change: 9.4, trend: "up" },
+    { id: 9, crop: "Apple", currentPrice: 580, previousPrice: 570, change: 1.8, trend: "up" },
+  ],
+  monthly: [
+    { id: 1, crop: "Wheat", currentPrice: 320, previousPrice: 290, change: 10.3, trend: "up" },
+    { id: 2, crop: "Rice", currentPrice: 450, previousPrice: 430, change: 4.7, trend: "up" },
+    { id: 3, crop: "Corn", currentPrice: 280, previousPrice: 300, change: -6.7, trend: "down" },
+    { id: 4, crop: "Soybean", currentPrice: 520, previousPrice: 480, change: 8.3, trend: "up" },
+    { id: 5, crop: "Cotton", currentPrice: 180, previousPrice: 200, change: -10.0, trend: "down" },
+    { id: 6, crop: "Sugarcane", currentPrice: 110, previousPrice: 100, change: 10.0, trend: "up" },
+    { id: 7, crop: "Potato", currentPrice: 220, previousPrice: 210, change: 4.8, trend: "up" },
+    { id: 8, crop: "Tomato", currentPrice: 350, previousPrice: 380, change: -7.9, trend: "down" },
+    { id: 9, crop: "Apple", currentPrice: 580, previousPrice: 550, change: 5.5, trend: "up" },
+  ],
+  quarterly: [
+    { id: 1, crop: "Wheat", currentPrice: 320, previousPrice: 270, change: 18.5, trend: "up" },
+    { id: 2, crop: "Rice", currentPrice: 450, previousPrice: 410, change: 9.8, trend: "up" },
+    { id: 3, crop: "Corn", currentPrice: 280, previousPrice: 250, change: 12.0, trend: "up" },
+    { id: 4, crop: "Soybean", currentPrice: 520, previousPrice: 450, change: 15.6, trend: "up" },
+    { id: 5, crop: "Cotton", currentPrice: 180, previousPrice: 210, change: -14.3, trend: "down" },
+    { id: 6, crop: "Sugarcane", currentPrice: 110, previousPrice: 90, change: 22.2, trend: "up" },
+    { id: 7, crop: "Potato", currentPrice: 220, previousPrice: 240, change: -8.3, trend: "down" },
+    { id: 8, crop: "Tomato", currentPrice: 350, previousPrice: 300, change: 16.7, trend: "up" },
+    { id: 9, crop: "Apple", currentPrice: 580, previousPrice: 520, change: 11.5, trend: "up" },
+  ],
+  annually: [
+    { id: 1, crop: "Wheat", currentPrice: 320, previousPrice: 270, change: 18.5, trend: "up" },
+    { id: 2, crop: "Rice", currentPrice: 450, previousPrice: 410, change: 9.8, trend: "up" },
+    { id: 3, crop: "Corn", currentPrice: 280, previousPrice: 250, change: 12.0, trend: "up" },
+    { id: 4, crop: "Soybean", currentPrice: 520, previousPrice: 450, change: 15.6, trend: "up" },
+    { id: 5, crop: "Cotton", currentPrice: 180, previousPrice: 210, change: -14.3, trend: "down" },
+    { id: 6, crop: "Sugarcane", currentPrice: 110, previousPrice: 90, change: 22.2, trend: "up" },
+    { id: 7, crop: "Potato", currentPrice: 220, previousPrice: 240, change: -8.3, trend: "down" },
+    { id: 8, crop: "Tomato", currentPrice: 350, previousPrice: 300, change: 16.7, trend: "up" },
+    { id: 9, crop: "Apple", currentPrice: 580, previousPrice: 520, change: 11.5, trend: "up" },
+  ],
+}
+
+export default marketTrends

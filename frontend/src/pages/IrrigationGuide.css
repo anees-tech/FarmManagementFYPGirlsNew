@@ -1,0 +1,367 @@
+.irrigation-guide-page {
+  min-height: 100vh;
+}
+
+.irrigation-guide-header {
+  background-color: #e8f5e9;
+  padding: 60px 0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.irrigation-guide-title {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.irrigation-guide-subtitle {
+  font-size: 1.2rem;
+  color: var(--light-text);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.irrigation-methods-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.method-nav-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.method-nav-button i {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.method-nav-button span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.method-nav-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.method-nav-button.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.method-nav-button.active i {
+  color: white;
+}
+
+.irrigation-method-content {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.method-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 20px;
+}
+
+.method-header h2 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+
+.method-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.method-icon i {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.method-description {
+  margin-bottom: 30px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: var(--light-text);
+}
+
+.method-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.method-detail-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.method-detail-card h3 {
+  margin-bottom: 15px;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.method-detail-card h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.method-detail-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.method-detail-card li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  padding-left: 25px;
+}
+
+.method-detail-card li:last-child {
+  border-bottom: none;
+}
+
+.method-detail-card li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+.benefits li:before {
+  content: "✓";
+}
+
+.limitations li:before {
+  content: "!";
+}
+
+.best-for li:before {
+  content: "→";
+}
+
+.setup li:before {
+  content: "•";
+}
+
+.irrigation-efficiency-section {
+  margin-bottom: 50px;
+}
+
+.irrigation-efficiency-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.efficiency-chart {
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.chart-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.bar-label {
+  width: 100px;
+  text-align: right;
+  padding-right: 15px;
+  font-weight: 500;
+}
+
+.bar-container {
+  flex: 1;
+  background-color: #f1f1f1;
+  height: 30px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  color: white;
+  font-weight: 500;
+  transition: width 1s ease-in-out;
+}
+
+.chart-note {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--light-text);
+  font-style: italic;
+}
+
+.irrigation-factors-section {
+  background-color: #f5f9f5;
+  padding: 60px 0;
+}
+
+.irrigation-factors-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--text-color);
+}
+
+.factors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.factor-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.factor-card:hover {
+  transform: translateY(-5px);
+}
+
+.factor-icon {
+  width: 70px;
+  height: 70px;
+  background-color: #e8f5e9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.factor-icon i {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.factor-card h3 {
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.factor-card p {
+  color: var(--light-text);
+  line-height: 1.6;
+}
+
+.irrigation-resources {
+  padding: 60px 0;
+}
+
+.irrigation-resources h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.resources-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.resource-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 25px;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.resource-link i {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.resource-link:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.resource-link:hover i {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .irrigation-guide-title {
+    font-size: 2rem;
+  }
+
+  .irrigation-guide-subtitle {
+    font-size: 1rem;
+  }
+
+  .method-nav-button {
+    min-width: 100px;
+    padding: 10px 15px;
+  }
+
+  .method-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .method-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bar-label {
+    width: 80px;
+  }
+}
