@@ -87,7 +87,7 @@ const Navbar = () => {
                   Weather Tips
                 </Link>
               </li>
-              
+
             </ul>
           </li>
 
@@ -126,7 +126,11 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
-
+          <li className="navbar-item">
+            <Link to="/about" className="navbar-link" onClick={() => setMenuOpen(false)}>
+              About
+            </Link>
+          </li>
           {currentUser ? (
             <>
               {/* Show appropriate dashboard based on user role */}

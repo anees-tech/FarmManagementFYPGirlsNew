@@ -242,43 +242,6 @@ const Support = () => {
                 ))}
               </div>
             )}
-
-            <div className="support-resources">
-              <h3>Additional Resources</h3>
-              <div className="resources-grid">
-                <a href="#" className="resource-card">
-                  <div className="resource-icon">
-                    <i className="fas fa-book"></i>
-                  </div>
-                  <h4>User Guide</h4>
-                  <p>Comprehensive guide to using all features of FarmConnect</p>
-                </a>
-
-                <a href="#" className="resource-card">
-                  <div className="resource-icon">
-                    <i className="fas fa-video"></i>
-                  </div>
-                  <h4>Video Tutorials</h4>
-                  <p>Step-by-step video guides for common tasks</p>
-                </a>
-
-                <a href="#" className="resource-card">
-                  <div className="resource-icon">
-                    <i className="fas fa-download"></i>
-                  </div>
-                  <h4>Downloads</h4>
-                  <p>Templates, guides, and other useful resources</p>
-                </a>
-
-                <a href="#" className="resource-card">
-                  <div className="resource-icon">
-                    <i className="fas fa-users"></i>
-                  </div>
-                  <h4>Community Forum</h4>
-                  <p>Connect with other farmers and share knowledge</p>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>

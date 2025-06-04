@@ -14,6 +14,7 @@ import AdminDashboard from "./pages/AdminDashboard"
 import Contact from "./pages/Contact"
 import Support from "./pages/Support"
 import Search from "./pages/Search"
+import AboutUs from "./pages/AboutUs"
 import { AuthProvider } from "./context/AuthContext"
 import ProtectedRoute from "./components/ProtectedRoute"
 import AdminRoute from "./components/AdminRoute"
@@ -39,6 +40,7 @@ function App() {
               <Route path="/news-events" element={<NewsEvents />} />
               <Route path="/news/:slug" element={<NewsDetail />} />
               <Route path="/irrigation-guide" element={<IrrigationGuide />} />
+              <Route path="/about" element={<AboutUs />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/support" element={<Support />} />
               <Route path="/search" element={<Search />} />

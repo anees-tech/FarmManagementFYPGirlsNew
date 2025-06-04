@@ -1822,7 +1822,7 @@ const AdminMarketPrices = () => {
                 <tr key={price.id || price._id}>
                   <td>{price.cropName}</td>
                   <td>{price.category}</td>
-                  <td>₹{price.currentPrice} {price.unit}</td>
+                  <td>{price.currentPrice} {price.unit}</td>
                   <td>{price.market}</td>
                   <td>{price.location}</td>
                   <td>
